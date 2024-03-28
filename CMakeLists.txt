@@ -15,13 +15,13 @@ find_package(SFML COMPONENTS system window graphics audio network REQUIRED)
 include_directories(${SFML_INCLUDE_DIRS})
 
 # File sorgente per la versione sequenziale
-add_executable(kmeans_sequential main_sequential.cpp)
+add_executable(kmeans_sequential sequential.cpp)
 
 # File sorgente per la versione parallela
-add_executable(kmeans_parallel main_parallel.cpp)
+add_executable(kmeans_parallel parallel.cpp)
 
 # File sorgente per la versione SoA
-add_executable(kmeans_structure_of_array main_structure_of_array.cpp)
+add_executable(kmeans_structure_of_array structure_of_array.cpp)
 
 # Include SFML
 find_package(SFML 2.5 COMPONENTS system window graphics network audio REQUIRED)
